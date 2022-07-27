@@ -597,6 +597,48 @@ color:var(--main-text-color);
 
 
 /* OUR CLIENTS  */
+.our-clients{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-color: var(--main-create-team-bg-color);
+}
+.our-clients__titlebox{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 64px;
+    text-align: center;
+}
+.our-clients__titlebox::before{
+    position: absolute;
+    top: -140px;
+    left: -209px    ;
+    width: 200px;
+    height: 200px;
+    content: "";
+    background-image: url(../images/bg-left.svg);
+}
+.our-clients__title{
+    display: block;
+    margin: 0;
+    font-weight: 700;
+font-size: 48px;
+line-height: 48px;
+text-align: center;
+color: var(--main-text-color);
+}
+.our-clients__logobox{
+    width: 100%;
+}
+.our-clients__list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
 
 
 
