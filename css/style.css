@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* ROOT */
 :root{
     --main-font-family: "Livvic", "Arial", sans-serif;
@@ -442,9 +449,10 @@ body{
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
+only screen and (                -webkit-min-device-pixel-ratio: 2),
+only screen and (                -o-min-device-pixel-ratio: 2/1),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .reviews__item:nth-child(1)::after{
@@ -540,6 +548,8 @@ only screen and (                min-resolution: 2dppx) {
 /* ABOUT HERO   */
 .about-hero__box{
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-top: 47px;
     padding-bottom: 120px;
@@ -626,10 +636,17 @@ color:var(--main-text-color);
 }
 
 .directors__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -685,10 +702,14 @@ color:var(--main-text-color);
     background-image: url("../images/plus.svg");
     background-repeat: no-repeat;
     background-position: center;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 .directors__button:hover {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     background-color: var(--main-text3-color);
 }
 
@@ -697,14 +718,19 @@ color:var(--main-text-color);
     top: 0;
     left: 0;
     width: 350px;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 .directors__button:hover ~ .directors__box{
-    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
 }
 .directors__button:hover ~ .directors__box .directors__comentsbox{
-    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
 }
 
 .directors__namebox {
@@ -716,6 +742,8 @@ color:var(--main-text-color);
     padding-top: 32px;
     padding-bottom: 56px;
     background-color: var(--main-create-team-bg-color);
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 
@@ -810,9 +838,10 @@ color:var(--main-text-color);
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
 only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
+only screen and (                -webkit-min-device-pixel-ratio: 2),
+only screen and (                -o-min-device-pixel-ratio: 2/1),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     .directors__name--director1::before {
@@ -856,6 +885,8 @@ only screen and (                min-resolution: 2dppx) {
     padding-bottom: 59px;
     padding-left: 48px;
     background-color: var(--footer-bg-color);
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 
@@ -873,9 +904,15 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 .directors__comment-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     list-style: none;
     margin-top: 24px;
     padding: 0;
@@ -889,6 +926,8 @@ only screen and (                min-resolution: 2dppx) {
 
 .directors__link {
     color: #fff;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
     transition: 0.3s ease;
 }
 .directors__link:hover {
@@ -933,8 +972,12 @@ color: var(--main-text-color);
     width: 100%;
 }
 .our-clients__list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0;
     padding-left: 0;
     list-style: none;
