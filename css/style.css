@@ -440,6 +440,24 @@ body{
     content: "";
 }
 
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .reviews__item:nth-child(1)::after{
+        background-image: url("../images/first-comment-img@2x.png");
+    }
+    .reviews__item:nth-child(2)::after{
+        background-image: url("../images/second-comment-img@2x.png");
+    }
+    .reviews__item:nth-child(3)::after{
+        background-image: url("../images/third-comment-img@2x.png");
+    }
+}
+
 .reviews__comments {
     margin: 0;
     font-size: 15px;
