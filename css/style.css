@@ -759,6 +759,32 @@ only screen and (                min-resolution: 2dppx) {
     content: "";
 }
 
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .directors__name--director1::before {
+        background-image: url("../images/director-1@2x.png");
+    }
+    .directors__name--director2::before {
+        background-image: url("../images/director-2@2x.png");
+    }
+    .directors__name--director3::before {
+        background-image: url("../images/director-3@2x.png");
+    }
+    .directors__name--director4::before {
+        background-image: url("../images/director-4@2x.png");
+    }
+    .directors__name--director5::before {
+        background-image: url("../images/director-5@2x.png");
+    }
+    .directors__name--director6::before {
+        background-image: url("../images/director-6@2x.png");
+    }
+}
 
 .directors__minitext {
     display: block;
