@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>myteam-multi-page</title>
+    <title>Contacts</title>
 
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -42,123 +42,65 @@
     <!-- Main start -->
     <main class="site-main">
         <!-- Hero section start  -->
-        <section class="hero">
-            
-        <div class="container">
-            <div class="hero__box">
-                <div class="hero__title-box">
-                    <h1 class="hero__title">Find the best <span class="hero__mini-text">talent</span></h1>
-                </div>
-                <div class="hero__text-box">
-                    <p class="hero__text">Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+        <section class="contact">
+            <div class="container">
+                <div class="contact__box">
+                    <div class="contact__textbox">
+                        <h2 class="contact__text">
+                            Contact
+                        </h2>
+                        <p class="contact__description">
+                            Ask us about
+                        </p>
+                        <ul class="contact__list">
+                            <li class="contact__item">
+                                <p class="contact__item-text">
+                                    The quality of our talent network
+                                </p>
+                            </li>
+                            <li class="contact__item">
+                                <p class="contact__item-text">
+                                    Usage & implementation of our software
+                                </p>
+                            </li>
+                            <li class="contact__item">
+                                <p class="contact__item-text">
+                                    How we help drive innovation
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="contact__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                        <label class="contact__label">
+                            <input class="contact__input-zone" type="text" name="user_name" id="user_name" minlength="2"
+                            maxlength="1000000" aria-label="Enter your name" required placeholder="Name">
+                            <span class="contact__invalid-text">This field is required</span>
+                        </label>
+                        <label class="contact__label">
+                            <input class="contact__input-zone" type="email" name="email_adress" id="email_adress" aria-label="Enter email adress" required placeholder="Email Address">
+                            <span class="contact__invalid-text">This field is required</span>
+                        </label>
+                        <label class="contact__label">
+                            <input class="contact__input-zone" type="text" name="company_name" id="company_name" minlength="2"
+                            maxlength="1000000" aria-label="Enter company name" required placeholder="Company Name">
+                            <span class="contact__invalid-text">This field is required</span>
+                        </label>
+                        <label class="contact__label">
+                            <input class="contact__input-zone" type="text" name="title_text" id="title_text" minlength="2"
+                            maxlength="1000000" aria-label="Enter title" required placeholder="Title">
+                            <span class="contact__invalid-text">This field is required</span>
+                        </label>
+                        <label class="contact__label">
+                            <textarea class="contact__input-zone contact__input-zone--message" name="user_message" id="user_message" minlength="3" maxlength="100000" aria-label="Enter your message" required placeholder="Message"></textarea>
+                            <span class="contact__invalid-text">This field is required</span>
+                        </label>
+                        <button class="contact__button" type="submit">submit</button>
+                    </form>
                 </div>
             </div>
-        </div>
         </section>
         <!-- Hero section finish  -->
 
-        <!-- Create team start -->
-        <section class="create-team">
-            <div class="container">
-                <div class="create-team__box">
-                    <div class="create-team__textbox">
-                        <h2 class="create-team__text">
-                            Build & manage distributed teams like no one else.
-                        </h2>
-                    </div>
-                    <ul class="create-team__list">
-                        <li class="create-team__item">
-                            <h3 class="create-team__item-text">
-                                Experienced Individuals
-                            </h3>
-                            <p class="create-team__description">
-                                Our network is made up of highly experienced professionals who are passionate about what they do.
-                            </p>
-                        </li>
-                        <li class="create-team__item">
-                            <h3 class="create-team__item-text">
-                                Easy to Implement
-                            </h3>
-                            <p class="create-team__description">
-                                Our processes have been refined over years of implementation meaning our teams always deliver.
-                            </p>
-                        </li>
-                        <li class="create-team__item">
-                            <h3 class="create-team__item-text">
-                                Enhanced Productivity
-                            </h3>
-                            <p class="create-team__description">
-                                Our customized platform with in-built analytics helps you manage your distributed teams.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <!-- Create team finish -->
-
-        <!-- Reviews start-->
-        <section class="reviews">
-            <div class="container">
-                <div class="reviews__textbox">
-                    <h2 class="reviews__text">
-                        Delivering real results for top companies. Some of our 
-                        <span class="reviews__minitext">success stories.</span>
-                    </h2>
-                </div>
-                <ul class="reviews__list">
-                    <li class="reviews__item">
-                        <blockquote class="reviews__comments">
-                            “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”
-                        </blockquote>
-                        <p class="reviews__name">
-                            Kady Baker
-                        </p>
-                        <i class="reviews__description">
-                            Product Manager at Bookmark
-                        </i>
-                    </li>
-                    <li class="reviews__item">
-                        <blockquote class="reviews__comments">
-                            “We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!”
-                        </blockquote>
-                        <p class="reviews__name">
-                            Aiysha Reese
-                        </p>
-                        <i class="reviews__description">
-                            Founder of Manage
-                        </i>
-                    </li>
-                    <li class="reviews__item">
-                        <blockquote class="reviews__comments">
-                            “Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”
-                        </blockquote>
-                        <p class="reviews__name">
-                            Arthur Clarke
-                        </p>
-                        <i class="reviews__description">
-                            Co-founder of MyPhysio
-                        </i>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <!-- Reviews finish-->
-
-        <!-- Site article start -->
-        <article class="site-article">
-            <div class="container">
-                <div class="site-article__box">
-                    <h2 class="site-article__text">
-                        Ready to get started?
-                    </h2>
-
-                    <a class="link link--article" href="./contact.html" >contact us</a>
-                </div>
-            </div>
-            
-        </article>
-        <!-- Site article finish -->
     </main>
     <!-- Main finish  -->
 
