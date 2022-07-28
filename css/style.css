@@ -1168,11 +1168,15 @@ color: var(--main-text-color);
 
 
 .site-footer__descriptionbox {
+    width: 200px;
     margin-right: auto;
 }
 
+.site-footer__descriptionbox-linkbox{
+    width: 130px;
+}
+
 .site-footer__description {
-    display: block;
     font-size: 15px;
     line-height: 25px;
     
@@ -1180,6 +1184,19 @@ color: var(--main-text-color);
     
     mix-blend-mode: normal;
     opacity: 0.6;
+    text-decoration: none;
+}
+
+.site-footer__tel-link{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 25px;
+    
+    color: var(--main-text-color);
+    
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    text-decoration: none;
 }
 
 /* .site-footer__linkbox {
